@@ -70,3 +70,19 @@ window.addEventListener('load', () =>{
     })
 })
 
+//mudar estilo
+const mudarEstilo = document.querySelector('#mudar-estilo');
+const body = document.querySelector('#body-main')
+
+mudarEstilo.addEventListener('click', () => {
+    body.classList.toggle('mudar-estilo')
+})
+
+mudarEstilo.addEventListener('click', () => {
+    if(mudarEstilo.innerHTML == 'X'){
+      mudarEstilo.innerHTML = 'O'
+    }
+    else if(mudarEstilo.innerHTML == 'O'){
+      mudarEstilo.innerHTML = 'X'
+    }
+})
